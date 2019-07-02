@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Azo Sans';
+    src: url('../src/assets/fonts/AzoSans-Light.woff2') format('woff2'),
+        url('../src/assets/fonts/AzoSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Azo Sans';
+    src: url('../src/assets/fonts/AzoSans-Regular.woff2') format('woff2'),
+        url('../src/assets/fonts/AzoSans-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Azo Sans';
+    src: url('../src/assets/fonts/AzoSans-Medium.woff2') format('woff2'),
+        url('../src/assets/fonts/AzoSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Azo Sans';
+    src: url('../src/assets/fonts/AzoSans-Bold.woff2') format('woff2'),
+        url('../src/assets/fonts/AzoSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}

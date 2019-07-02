@@ -1,0 +1,995 @@
+{
+  "title": "PRODUCT APP",
+  "props": {
+    "splashUrl": "https://i.imgur.com/5BFxA7i.png",
+    "description": "Uma app Product é onde existe gestão dos produtos e da relação com a Fidelidade",
+    "branding": "My Fidelidade",
+    "tipologia": "Clientes",
+    "exemplo": "My Savings",
+    "exemploThumb": "https://i.imgur.com/giBaroB.png"
+  },
+  "children": [
+    {
+	  "title": "UX GUIDELINES",
+	  "id": 1,
+      "props": {},
+      "children": [
+        {
+          "title": "Research, Quote and Payment",
+          "children": [
+            {
+              "title": "Comunicação",
+              "props": {
+                "description": "Página de conteudo dedicada",
+                "components": [
+                  "Headline",
+                  "Body copy",
+                  "Image",
+                  "Attachment",
+                  "CTA conversion"
+                ]
+              }
+            },
+            {
+              "title": "Simulação",
+              "props": {
+                "description": "Formulário completo com página dedicada",
+                "components": [
+                  "Form Elements",
+                  "Button > Box+text",
+                  "Button > Text link"
+                ]
+              }
+            },
+            {
+              "title": "Contratação",
+              "props": {
+                "description": "Contratador completo com página dedicada, com possibilidade de contratar directamente ou pedido de contacto (canais)",
+                "components": [
+                  "Form Elements",
+                  "Button > Box+text",
+                  "Button > Text link",
+                  "Button > Floating Button"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Policy Management",
+          "children": [
+            {
+              "title": "Paperless",
+              "props": {
+                "description": "Se Cliente: \n Assim que se regista, o utilizador passa automáticamente a ser um cliente paperless. Se for um cliente que já tem registo, tem de escolher aderir ao paperless, apenas clicando num CTA."
+              }
+            },
+            {
+              "title": "Information",
+              "children": [
+                {
+                  "title": "Macro",
+                  "props": {
+                    "description": "Página de apólice.",
+                    "components": [
+                      "Lists > Policy List"
+                    ]
+                  }
+                },
+                {
+                  "title": "Micro",
+                  "props": {
+                    "description": "Página com tabs (MyFidelidade)"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Claims management",
+          "children": [
+            {
+              "title": "Claims submission",
+              "children": [
+                {
+                  "title": "Claims & Reimbursments",
+                  "props": {
+                    "description": "Processo com um fluxo de várias páginas/momentos.",
+                    "components": [
+                      "Form Elements",
+                      "Button > Box+text",
+                      "Button > Text link",
+                      "Button > Floating Button"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Timeline",
+              "children": [
+                {
+                  "title": "Claims & Reimbursments Timeline",
+                  "props": {
+                    "description": "Página de timeline com acompanhamento de processo, resumo do pedido e documentos adicionados.",
+                    "components": [
+                      "Iconography > Standart Icon",
+                      "List > Simple list",
+                      "Button > Box+text",
+                      "Button > Text link",
+                      "Button > Icon+text"
+                    ]
+                  }
+                },
+                {
+                  "title": "Authorization Timeline",
+                  "props": {
+                    "description": "Página de timeline com acompanhamento de processo.",
+                    "components": [
+                      "Iconography > Standart Icon",
+                      "List > Simple list",
+                      "Button > Box+text",
+                      "Button > Text link",
+                      "Button > Icon+text"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Insurance card",
+              "children": [
+                {
+                  "title": "Digital card",
+                  "props": {
+                    "description": "Página unica com informação do cartão digitalizado.",
+                    "components": [
+                      "Cards > Standart Card",
+                      "Iconography > Produt Icon",
+                      "Iconography > Utility Icon",
+                      "Form Elements > Text Field",
+                      "Button > Icon+text"
+                    ]
+                  }
+                },
+                {
+                  "title": "Generate code",
+                  "props": {
+                    "description": "Página de timeline com acompanhamento de processo.",
+                    "components": [
+                      "Cards > Standart Card",
+                      "Iconography > Produt Icon",
+                      "Iconography > Utility Icon",
+                      "Form Elements > Text Field",
+                      "Button > Icon+text"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Utility/service management",
+          "children": [
+            {
+              "title": "Assistance",
+              "children": [
+                {
+                  "title": "Request",
+                  "props": {
+                    "description": "CTA a redirecionar para a App de Assistência para fazer a participação.",
+                    "components": [
+                      "Form Elements",
+                      "Button > Box+text",
+                      "Button > Text link",
+                      "Button > Floating Button"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Gamification",
+              "props": {
+                "description": "Dados de consulta sobre a experiência de gamificação.",
+                "components": [
+                  "Cards > Standart Cards",
+                  "Indicators > progress bar",
+                  "Lists > Simple List",
+                  "Form Elements > Text Field"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+	  "title": "PATTERN LIBRARY",
+	  "id": 2,
+      "props": {},
+      "children": [
+        {
+          "title": "Welcome",
+          "children": [
+            {
+              "title": "Splash Screen",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Ecrã de boas-vindas numa primeira utilização ou que surge sempre que a aplicação é aberta. Deve orientar o utilizador sobre o propósito da aplicação e ter um papel mais do que visual na utilização recorrente, como p.e apresentação de comunicação relevante, visto que é um momento em que o utilizador está focado neste ecrã.",
+                "components": [
+                  "Logo (branding)",
+                  "Loader",
+                  "Mensagem"
+                ]
+              }
+            },
+            {
+              "title": "Register screen",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Ecrã com campos de inserção de dados pessoais para que o utilizador consiga registar-se na aplicação. É normalmente o primeiro momento na interação, após o splash screen.",
+                "components": [
+                  "Logo (opcional)",
+                  "Form elements > Text Input Field",
+                  "Button > Box text",
+                  "Button > Text link"
+                ]
+              }
+            },
+            {
+              "title": "Login screen",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Ecrã com campos de inserção de dados pessoais para que o utilizador consiga entrar na aplicação. É normalmente o segundo momento na interação. \n",
+                "components": [
+                  "Logo (opcional)",
+                  "Form elements > Text Input Field",
+                  "Button > Text link"
+                ]
+              }
+            },
+            {
+              "title": "Onboarding",
+              "importance": "Pode existir",
+              "props": {
+                "description": "Sequência até 5 ecrãs que devem explicar os principais propósitos ou features da app",
+                "components": [
+                  "Image",
+                  "Tooltip with text field",
+                  "Navigation > buttons"
+                ]
+              }
+            },
+            {
+              "title": "Tutorial",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Sequência de 4-7 ecrãs que explicam em detalhe uma feature e todos os passos que a compõem. Idealmemte devem ser momentos, desenvolvidos em código, em vez de imagens estáticas para o utilizador poder interagir e ser direcionado em cada passo. \n",
+                "components": [
+                  "Image",
+                  "Tooltip with text field",
+                  "Navigation > buttons"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Navigation",
+          "children": [
+            {
+              "title": "Side Menu",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Menu de navegação lateral, com todas as principais áreas da app, normalmente é definido a partir do site/app map. Está normalmente \"escondido\" do lado esquerdo do ecrã e é representado e despultado ou por um icon ou por um swipe para a direita, para ficilitar a assessibilidade.",
+                "components": [
+                  "Iconography > Menu icon",
+                  "Navigation > Menu dropdown",
+                  "Button > Icon+Text (horizontal)",
+                  "Button > Text link"
+                ]
+              }
+            },
+            {
+              "title": "Shortcut Menu",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Menu opcional, com objectivo de simplificar a assessibilidade a àreas que sejam mais relevantes para cada utilizador, individualmente. Este menu deve ter uma camada de automação associado, para que seja mesmo relevante na experiência e trazer para este contexto os acessos mais recorrentes do utilizador.",
+                "components": [
+                  "Navigation > Icon+text (vertical)"
+                ]
+              }
+            },
+            {
+              "title": "Menu intermedio",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Forma de navegação mais focada, normalmente antecede um processo denso como uma participação de sinistro ou um pedido de reembolso. Tem uma página inteira dedicada para esta seleção. Serve para desambiguar por exemplo o ramos numa participação de sinistro ou na pesquisa de prestadores.",
+                "components": [
+                  "Navigation > Icon+text (vertical)"
+                ]
+              }
+            },
+            {
+              "title": "Menu Dropdown",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Item de menu lateral, que contém sub-menus dentro. Ao clicar neste item principal em vez de direcionar o utilizador para uma página especifica, surgem outros items por debaixo deste. Estes items de menu com dropdown normalmente servem como agregadores de tópicos diferentes mas que tem um tema em comum.",
+                "components": [
+                  "Navigation > Icon+text (horizontal)"
+                ]
+              }
+            },
+            {
+              "title": "Tabs",
+              "importance": "Mandatório",
+              "props": {
+                "description": "As tabs são utilizadas para facilitar a navegação entre sub-páginas dentro do mesmo contexto.",
+                "components": [
+                  "Button > Text"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Messaging",
+          "children": [
+            {
+              "title": "Notification Feed",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Listagem de notificações organizadas por mais recentes, em ordem decrescente. Pode ser uma página dedicada ou ser um modúlo dentro de uma página com outros componentes.",
+                "components": [
+                  "Messaging > In-App Notification"
+                ]
+              }
+            },
+            {
+              "title": "In-app Notification",
+              "importance": "Pode existir",
+              "props": {
+                "description": "As notificações dentro da app informam os utilizadores de atividades relevantes e proporcionam atalhos e acessos contextuais a esta informação.",
+                "components": [
+                  "Headline",
+                  "Text",
+                  "Timestamp"
+                ]
+              }
+            },
+            {
+              "title": "Push Notifications",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Notificações com propósito semelhante às in-app, mas que permitem uma comunicação com o utilizador sem que seja necessário a aplicação estar aberta. Também permitem o acesso contextual a páginas ou a informação relevante.",
+                "components": [
+                  "Headline",
+                  "Text",
+                  "Timestamp",
+                  "Image"
+                ]
+              }
+            },
+            {
+              "title": "Tracking Feed",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Listagem de passos num processo com uma linha temporal limitada. (p.e Acompanhamento de sinistros, reembolsos, pedidos de autorização.) As entradas deste processo podem assumir também a forma de notificações in-app. Organizadas por mais recentes, em ordem decrescente.",
+                "components": [
+                  "Headline",
+                  "Text",
+                  "Timestamp"
+                ]
+              }
+            },
+            {
+              "title": "In-Context Notification Modal",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Notificação que surge num formato de lightbox e que sobrepõe toda a àrea visivel do ecrã. Normalmente é uma informação importante para o utilizador, visto que este formato  ou algo com o qual este terá de interagir para poder avançar.",
+                "components": [
+                  "Iconography > Utility icons",
+                  "Headline",
+                  "Text Field",
+                  "CTA"
+                ]
+              }
+            },
+            {
+              "title": "In-line Message",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Este tipo de mensagem normalmente aparece associado a um campo, com o propósito de dar indicação adicional sobre o campo ou de validação positiva ou negativa após o preenchimento do mesmo.",
+                "components": [
+                  "Text Field"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Buttons",
+          "children": [
+            {
+              "title": "Box+text",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Botão composto por uma caixa (normalmente rectangular) e um copy. Este botão pode ter vários estados, nomeadamente cores que deverão indicar se é uma acção princiapl (vermelho), uma acção secundária (azul) ou se está desabilitado (cinzento).",
+                "components": [
+                  "Shape (rectangle)",
+                  "Text"
+                ]
+              }
+            },
+            {
+              "title": "Text link",
+              "importance": "Mandatório",
+              "props": {
+                "description": "São botões representados de forma diferente, de modo a terem menos destaque que os Box text buttons. Normalmente indicam acções opcionais ou menos relevantes para o fluxo de experiência.",
+                "components": [
+                  "Text"
+                ]
+              }
+            },
+            {
+              "title": "Icon+Text",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Representação de botão auxiliado de uma imagem (icon) de modo a tornar a leitura e a compreensão mais directas.",
+                "components": [
+                  "Iconography > Menu/Utility Icon",
+                  "Text"
+                ]
+              }
+            },
+            {
+              "title": "Floating action button",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Normalmente representam acções que são transversais aos vários ecrãs ou contextos em que aparecem. Devem ser utilizados quando existem processos onde o utilizador possa precisar de ajuda (sobre a forma de pedido de contacto o GCC, p.e)",
+                "components": [
+                  " Iconography > Utility/action Ico"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Indicators",
+          "children": [
+            {
+              "title": "Progress bar",
+              "importance": "Pode existir",
+              "props": {
+                "description": "Uma barra de progresso serve para ajudar a gerir as expectativas de um utilizador quando está a preencher/interagir com um processo que tenha vários passos. Pode servir tambem como elemento visual para representar o progresso de algo que tenha um objectivo final.",
+                "components": [
+                  "Shape (rectangle)"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Lists",
+          "children": [
+            {
+              "title": "Policy List",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Uma sequência de elementos utilizada para apresentar produtos. Serve para dar ao utilizador uma visão geral dos produtos que este possui e como agregador de toda a informação associada a uma apólice.",
+                "components": [
+                  "Iconography > Product Icon",
+                  "Heading",
+                  "Text line",
+                  "Shape"
+                ]
+              }
+            },
+            {
+              "title": "Document List",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Uma lista de documentos, que pode existir dentro de uma página de detalhe de uma apólice, sobre uma tab de Documentos, e que são apenas referentes à mesma. Ou pode existir dentro de uma página dedicada a esta temática, onde poderá ser filtrada. Um item desta lista tem o nome do documento, a referencia a que apolice pertence e a data.",
+                "components": [
+                  "Heading",
+                  "Text line",
+                  "Shape"
+                ]
+              }
+            },
+            {
+              "title": "Simple List",
+              "importance": "Pode existir",
+              "props": {
+                "description": "Uma lista composta por vários campos de consulta de informação. Esta listagem pode ser utilizada sempre que existir uma necessidade de apresentar vários tópicos de informação, todos referentes a um contexto comum. Normalmente aparece sobre tabs (referidas acima) que agrupam este tipo de componente. Um item desta lista terá sempre uma label e uma linha de texto com informação referente a esse campo.",
+                "components": [
+                  "Heading",
+                  "Text line",
+                  "Shape"
+                ]
+              }
+            },
+            {
+              "title": "Faq's List",
+              "importance": "Pode existir",
+              "props": {
+                "description": "Uma lista de componentes, semelhante a uma lista simples, mas com a particularidade de ter uma página de detalhe associada. Existe uma lista de perguntas frequentes, que so clicar, o utilizador é direcionado para uma página dedicada com a resposta. Esta separação permite uma identificação mais rápida da pergunta e uma análise mais detalhada e contextual da resposta.",
+                "components": [
+                  "Text line",
+                  " Iconography > Navigation icon"
+                ]
+              }
+            },
+            {
+              "title": "Apps List",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Lista de aplicações do ecossistema Fidelidade. Esta lista serve para mostrar ao utilizador outras soluções digitais do ecossistema mobile, com um resumo do proposito de cada uma. Ao clicar, o utilizador é direcionado para a store do OS do seu dispositivo móvel.",
+                "components": [
+                  "Iconography > App logo",
+                  "Heading",
+                  "Text line",
+                  "Shape"
+                ]
+              }
+            },
+            {
+              "title": "List Item with dropdown",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Um item de lista com informação escondida e uma referência (icon) e que ao toque é apresentada esta informação. Este item é utilizado quando existe informação principal que pode ser mostrada, mas que pode ou não precisar de um complemente/explicação.",
+                "components": [
+                  "Heading",
+                  "Text line",
+                  "Iconography > Navigation icon"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Cards",
+          "children": [
+            {
+              "title": "Standard Card",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Componente com informação de resumo sobre um tema especifico, como por exemplo resumo de uma apólice, de uma participação de sinistro ou de uma mensagem/documento. Tem informação de consulta, mas ao toque direciona o utilizador para uma página dedicada com mais informação. ",
+                "components": [
+                  "Headline",
+                  "Progress bar",
+                  "Icon",
+                  "Text"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Form elements",
+          "children": [
+            {
+              "title": "Text Input Field",
+              "importance": "Pode existir",
+              "props": {
+                "description": "Campo de inserção de texto. Normalmente uma linha de texto, com limite de caractéres. ",
+                "components": [
+                  "Text field",
+                  "Iconography > Utility icon (edit)",
+                  "Shape"
+                ]
+              }
+            },
+            {
+              "title": "Password Field",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Campo de inserção de password. Os caracteres devem aparecer escondidos, com a possibilidade de serem visiveis. Esta possibilidade deve substituir a necessidade de ter uma duplicação deste campo para a confirmação da password. Este campo deve ter associado uma inline message, no momente de definição de password, com as regras para a definição de uma password forte. Deve também ter associado um button text link, no momento de acesso, no caso de o utilizador precisar de fazer um reset à password.",
+                "components": [
+                  "Text field",
+                  "Iconography > Utility icon (view)",
+                  "Inline message",
+                  "Button > text link"
+                ]
+              }
+            },
+            {
+              "title": "Text Input Area",
+              "importance": "Pode existir",
+              "props": {
+                "description": "Campos de inserção de texto são utilizados quando é necessário que o utilizador escreva um texto longo. É um componente comum e deve ser utilizado em processos onde seja necessário informação adicional detalhada.",
+                "components": [
+                  "Text field",
+                  "Iconography > Utility icon (edit)",
+                  "Shape"
+                ]
+              }
+            },
+            {
+              "title": "Checkbox",
+              "importance": "Pode existir",
+              "props": {
+                "description": "Este componente é utilizado quando existe uma lista de opções onde pode existir uma seleção opcional ou multipla. Uma boa prática para estes tipo de componente será perceber qual o caso mais comum, e apresentá-los logo preenchidos, sendo que devemos ter como métrica retirar necessidade de interação por parte do utilizador.",
+                "components": [
+                  "Iconography > Utility icon (edit)",
+                  "Shape"
+                ]
+              }
+            },
+            {
+              "title": "Radio Button",
+              "importance": "Pode existir",
+              "props": {
+                "description": "Utilizado quando existe mais do que um item, mas onde o utilizador só pode escolher obrigatóriamente uma opção.",
+                "components": [
+                  "Iconography > Utility icon (radio button)",
+                  "Text field"
+                ]
+              }
+            },
+            {
+              "title": "Toggle",
+              "importance": "Pode existir",
+              "props": {
+                "description": "Este componente serve para que o utilizador consiga facilmente alternar um elemento entre dois estados. Utilizado por exemplo em ecrãs de definições, para ativar ou desativar determinadas funcionalidades.",
+                "components": [
+                  "Shape (dois estados)",
+                  "Text field"
+                ]
+              }
+            },
+            {
+              "title": "Text field",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Area de texto apenas de consulta, sem qualquer tipo de interação. Deve ter limite de caractéres consoante o contexto em que é aparesentado.",
+                "components": [
+                  " Text field"
+                ]
+              }
+            },
+            {
+              "title": "Slider",
+              "importance": "Pode existir",
+              "props": {
+                "description": "Uma inserção de informação, de interação simples. O utilizador desliza o elemento de seleção sobre valores definidos entre um intervalo minimo e máximo. Utilizado para simplificar respostas em formulários.",
+                "components": [
+                  "Shape selector",
+                  "Shape range",
+                  "Text field"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Modals",
+          "children": [
+            {
+              "title": "Confirmation Modal",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Forma de comunicar informação que necessita de foco por parte do utilizador, mas que não o tira do contexto da tarefa que está a executar.",
+                "components": [
+                  "Iconography > Icon",
+                  "Headline",
+                  "Text field",
+                  "CTA"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Filters and Selections",
+          "children": [
+            {
+              "title": "Dropdown Sort",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Define as regras de organização de informação. Serve para dispor a informação por ordem de entrada ou por ordem alfabética p.e.",
+                "components": [
+                  "Dropdown box",
+                  "Text",
+                  "Iconography > Icon navigation"
+                ]
+              }
+            },
+            {
+              "title": "Dropdown Filter",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Define as regras de filtragem de informação. Serve para filtrar a informação por apolice, tipologia, estado, ect.",
+                "components": [
+                  "Dropdown box",
+                  "Text",
+                  "Iconography > Icon navigation"
+                ]
+              }
+            },
+            {
+              "title": "Selection Layer",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Detalhe de um componente que tenha uma seleção multipla, mas que precise de mais atenção por parte do utilizador. Tem o mesmo propósito de experiência que uma confirmation modal, com a diferença que após selecionar as opções deve confirmar as mesma e volta ao contexto onde estava.",
+                "components": [
+                  "Headline",
+                  "Checkbox selection",
+                  "Radio button selection",
+                  "CTA"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Search",
+          "children": [
+            {
+              "title": "In-Context Search",
+              "importance": "Pode existir",
+              "props": {
+                "description": "Este componente permite aos utilizadores fazer uma filtragem do conteudo através de um campo de texto livre. Oferece a mesma experiência que um campo de pesquisa geral, mas coloca o utilizador num contexto onde as expectativas de pesquisa são mais reduzidas/orientadas. "
+              }
+            }
+          ]
+        },
+        {
+          "title": "Miscellaneous",
+          "children": [
+            {
+              "title": "App ID (footer)",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Identificador da versão mais recente da aplicação. Normalmente presente no fundo do menu lateral ou na página de definições",
+                "components": [
+                  "Text field"
+                ]
+              }
+            },
+            {
+              "title": "Map",
+              "importance": "Pode existir",
+              "props": {
+                "description": "Componente visual utilizado para destacar posições relevantes para o utilizador. Utilizado para pesquisa de prestadores ou pedidos de assistência.",
+                "components": [
+                  "Elemento visual - Posição do utilizador",
+                  "Elemento visual - Pontos de destaque/referência"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Errors",
+          "children": [
+            {
+              "title": "Inaccessible Page Content",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Página dedicada com mensagem de erro ou de conteudo não acessivel. Deve ter um CTA para direcionar o utilizador para ou outra página ou para um caminho que solucione este erro.",
+                "components": [
+                  "Iconography > Icon",
+                  "Headline",
+                  "Text field",
+                  "CTA"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Motion",
+          "children": [
+            {
+              "title": "Loader",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Esta animação serve para gerir as expectativas do utilizador quando a aplicação está a carregar componentes ou informação para construir a página. Este tipo de feedback visual ajuda o utilizador a perceber que existe uma resposta do sistema ao pedido que fez. Nestes momentos podemos também aproveitar para comunicar algo contextual ou relevante para o utilizador enquanto este espera e temos a sua atenção.",
+                "components": [
+                  "Elemento visual animado",
+                  "Text field"
+                ]
+              }
+            },
+            {
+              "title": "Feedback",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Permite ao utilizador perceber o que executou uma acção ou fazer a gestão de expectativas"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Iconography",
+          "children": [
+            {
+              "title": "App Logo",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Imagem (branding) que identifica a aplicação e que define o look and feel da mesma"
+              }
+            },
+            {
+              "title": "Custom/Standard Icons",
+              "importance": "Pode existir",
+              "props": {
+                "description": "Icons especificos de uma aplicação. Estes podem surgir por necessidades de comunicação especificas de cada ramo ou tipo de aplicação."
+              }
+            },
+            {
+              "title": "Menu Icons",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Icons identificadores de navegação"
+              }
+            },
+            {
+              "title": "Utility Icons",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Icons identificadores de utilizações ou ferramentas"
+              }
+            },
+            {
+              "title": "Document Icons",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Icons identificadores de tipologias de documentos"
+              }
+            },
+            {
+              "title": "Action Icons",
+              "importance": "Mandatório",
+              "props": {
+                "description": "Icons identificadores de acções principais e secundárias"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Branding",
+          "children": [
+            {
+              "title": "Naming",
+              "importance": "My Fidelidade",
+              "props": {
+                "description": "Nome da aplicação, que deve seguir o racional definido para para a App de clientes e a Área Reservada desktop. Acrescentar o \"MY\" aos namings das aplicações ajuda a criar esta sensação de posse sobre os produtos ou serviços e a aproximar o utilizador da marca."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+	  "title": "DATA MATRIX",
+	  "id": 3
+    },
+    {
+	"title": "Tech Specs",
+	"id": 4,
+	"headers": [
+		{
+			"text": "Feature"
+		},
+		{
+			"text": "OutSystems Mobile APP",
+			"subtext": "Framework Cordova"
+		},
+		{
+			"text": "Native/Third Party Mobile APP"
+		}
+	],
+	"data": [
+		{
+			"id": 1,
+			"label": "Authentication",
+			"outsystem": [
+				{
+					"text": "USERS OutSystems - eSapce com ações de autenticação para app mobile/web OAUth/SAML 2.0 - Autenticação ADFS Azure Fidelidade APP/Web B2E"
+				}
+			],
+			"native": "OAUth/SAML 2.0 - Autenticação ADFS Azure Fidelidade"
+		},
+		{
+			"id": 2,
+			"label": "Push Notifications",
+			"outsystem": [
+				{
+					"text": "Airship SDK para iOS e Android"
+				}
+			],
+			"native": "Airship SDK para iOS e Android"
+		},
+		{
+			"id": 3,
+			"label": "Analytics",
+			"outsystem": [
+				{
+					"text": "Google Analytics Plugin",
+					"link": "https://www.outsystems.com/forge/component-overview/1499/google-analytics-plugin"
+				}
+			],
+			"native": "Google Analytics SDK & Google Tag Manager"
+		},
+		{
+			"id": 4,
+			"label": "Error Handling",
+			"outsystem": [
+				{
+					"text": "Estrutura local com os eventos de erros, que em condições de comunicação sincroniza os eventos mais recentes com um serviço de backend genérico"
+				}
+			],
+			"native": "Estrutura local com os eventos de erros, que em condições de comunicação sincroniza os eventos mais recentes com um serviço de backend genérico"
+		},
+		{
+			"id": 5,
+			"label": "Security",
+			"outsystem": [
+				{
+					"text": "Os dados locais sensiveis devem ser encriptados na storage do device"
+				}
+			],
+			"native": "Os dados locais sensiveis devem ser encriptados na storage do device"
+		},
+		{
+			"id": 6,
+			"label": "Deep Links",
+			"outsystem": [
+				{
+					"text": "O uso de deep links deve ser baseado num interface comum (a definir), que permita a navegação entre a constelação de APPs"
+				}
+			],
+			"native": "O uso de deep links deve ser baseado num interface comum (a definir), que permita a navegação entre a constelação de APPs"
+		},
+		{
+			"id": 7,
+			"label": "Sensores Device",
+			"outsystem": [
+				{
+					"text": "Acelerómetro",
+					"link": "https://www.outsystems.com/forge/component-overview/2043/accelerometer"
+				},
+				{
+					"text": "Device Motion & Orientation",
+					"link": "https://www.outsystems.com/forge/component-overview/3693/devicemotionandorientation"
+				},
+				{
+					"text": "GPS Location Plugin",
+					"link": "https://www.outsystems.com/forge/component-overview/1395/location-plugin"
+				},
+				{
+					"text": "GPS Background Location Plugin",
+					"link": "https://www.outsystems.com/forge/component-overview/1623/background-location-plugin"
+				},
+				{
+					"text": "Background Mode Plugin",
+					"link": "https://www.outsystems.com/forge/component-overview/1727/backgroundmode-plugin"
+				},
+				{
+					"text": "Camera Plugin",
+					"link": "https://www.outsystems.com/forge/component-overview/1390/camera-plugin"
+				},
+				{
+					"text": "InAppBrowser Plugin",
+					"link": "https://www.outsystems.com/forge/component-overview/1558/inappbrowser-plugin"
+				},
+				{
+					"text": "Touch ID Plugin",
+					"link": "https://www.outsystems.com/forge/component-overview/1431/touch-id-plugin"
+				},
+				{
+					"text": "Contacts Plugin",
+					"link": "https://www.outsystems.com/forge/component-overview/1394/contacts-plugin"
+				}
+			],
+			"native": "Funções nativas iOS/Android"
+		}
+	]
+    }
+  ]
+}

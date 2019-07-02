@@ -1,0 +1,85 @@
+@import "media";
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+html {
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+
+	// This defines what 1rem is
+	font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+
+	@include max-screen($medium) {
+		// width < 600?
+		font-size: 52.5%;
+	}
+	@include max-screen($small) {
+		// width < 600?
+		font-size: 42.5%;
+	}
+}
+
+body {
+	background: white;
+	margin: 0;
+	min-width: 30.2rem;
+	padding: 0;
+	overflow-x: hidden;
+
+	font-family: 'Azo Sans';
+	font-weight: 300;
+	line-height: 2.5rem;
+	color: #2C363E;
+	line-height: normal;
+}
+
+html, body {
+	height: 100%;
+}
+
+#app {
+	height: 100%;
+}
+
+html[class*='-no-scroll'] {
+	&, body {
+		overflow: hidden;
+	}
+}
+
+hr {
+	margin: 0;
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+	color: #2C363E;
+}
+
+p, ul, ol {
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 1rem 0;
+}
+
+input,
+textarea {
+	// resets
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	letter-spacing: inherit;
+	text-align: inherit;
+}
+
+pre {
+	display: block;
+	overflow: auto;
+}
