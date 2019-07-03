@@ -32,7 +32,7 @@
 						<span class="bubble -faus">Faustudo</span>
 						<span class="bubble -pets">MyPets</span>
 					</div>
-					<div class="circle-center -circle">
+					<div class="circle-center">
 						<img src="../assets/logo-center.svg" />
 					</div>
 				</div>
@@ -81,8 +81,10 @@ export default Vue.extend ({
 	height: 100%;
 	min-height: 100%;
 	overflow: hidden;
+	position: relative;
 
 	.welcome-container {
+
 		height: 100%;
 		width: 100%;
 		position: relative;
@@ -101,6 +103,10 @@ export default Vue.extend ({
 
 			.-circle {
 				position: absolute;
+				// IE support
+				top: 50%;
+				left: 50%;
+				transform: translateY(-50%) translateX(-50%);
 
 				@for $i from 1 through 4 {
 				&:nth-child(#{$i}) .circle {
@@ -443,15 +449,30 @@ export default Vue.extend ({
 				width: 20vh;
 				background: $color-main;
 				border-radius: 50%;
+
 				display:flex;
 				justify-content: center;
 				align-items: center;
+
+				/*	// IE support
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translateY(-50%) translateX(-50%); */
+
 				img {
 					margin-top: 1rem;
 				}
 
+
+
 				// ipad portrail and bellow
 
+				@include max-screen($medium) {
+					img {
+						width: 80%;
+					}
+				}
 				@include max-screen($small) {
 					height: 12vh;
 					width: 12vh;
@@ -480,11 +501,14 @@ export default Vue.extend ({
 	}
 
 	.welcome-content {
+
 		flex-basis: 70rem;
 		justify-content: center;
 		text-align: center;
 		position: absolute;
 		bottom: 0;
+		padding-bottom: 3vh;
+		left: 0;
 		width: 100%;
 		height: 50vh;
 		background: linear-gradient(rgba(255, 255, 255, 0), hsl(0, 0%, 93%));

@@ -34,8 +34,8 @@ export default Vue.extend({
 				'pageName': 'Welcome',
 				'itemIndex': null
 			});
-		},
-	},
+		}
+	}
 });
 </script>
 
@@ -55,6 +55,13 @@ export default Vue.extend({
 		position: fixed;
 		top: 0;
 
+		transition: all .3s ease-in;
+
+		&.--bar-transparent {
+			transform: translateY(-50%);
+			opacity: 0;
+		}
+
 		@include max-screen($medium) {
 			background: transparent;
 			border: 0;
@@ -65,9 +72,10 @@ export default Vue.extend({
 			margin-left: 1.5rem;
 			display: block;
 
-
 			.logo-head {
+				max-width: 3rem;
 				max-height: 3.6rem;
+				border: 0;
 			}
 		}
 		.logo-wrapper {

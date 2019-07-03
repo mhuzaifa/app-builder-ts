@@ -347,6 +347,12 @@ export default Vue.extend ({
 			return this.selectedTabObject.children[this.selectedCategoryIndex];
 		}
 	},
+	mounted() {
+		window.addEventListener('scroll', this.onScroll);
+	},
+	destroyed() {
+		window.removeEventListener('scroll', this.onScroll);
+	},
 	methods: {
 		switchTab(index: number): any {
 			this.selectedTabIndex = index;
@@ -358,9 +364,19 @@ export default Vue.extend ({
 		scrollBoom() {
 			const scrollable = this.$refs.scrollable as HTMLElement;
 			scrollable.scrollTop = 0;
-		}
+		},
+		onScroll() {
+			let header = document.querySelector(".top-bar");
 
-	},
+			if (header) {
+				if (window.scrollY > 200 && !header.className.includes('--bar-transparent')) {
+					header.classList.add('--bar-transparent');
+				} else if (window.scrollY < 200) {
+					header.classList.remove('--bar-transparent');
+				}
+			}
+		}
+	}
 });
 </script>
 
@@ -401,7 +417,11 @@ export default Vue.extend ({
 		.product-details {
 			display: flex;
 			justify-content: flex-start;
-			max-width: 73.5rem;
+			width: 73.5rem;
+
+			@include max-screen($small) {
+				max-width: 70rem;
+			}
 
 			margin: 4rem auto 5rem;
 
@@ -412,6 +432,7 @@ export default Vue.extend ({
 
 				img {
 					max-width: 100%;
+					height: auto;
 				}
 			}
 
@@ -501,8 +522,8 @@ export default Vue.extend ({
 			flex: 1;
 
 			scroll-behavior: smooth;
-			position: sticky;
-			top: 0;
+			/* position: sticky;
+			top: 0; */
 
 
 			.cat-wrapper {
@@ -514,8 +535,7 @@ export default Vue.extend ({
 				.cat-tab {
 					padding: 0 8rem;
 					height: 100%;
-
-
+					display: inline-block;
 
 					&:nth-child(3) {
 						pointer-events: none;

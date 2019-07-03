@@ -72,6 +72,12 @@ export default Vue.extend ({
 		img {
 			min-width: 100%;
 		}
+
+		@include max-screen($medium) {
+			img {
+				max-width: 35rem;
+			}
+		}
 	}
 	.intro-content {
 		flex-basis: 70rem;

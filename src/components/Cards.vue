@@ -252,16 +252,17 @@ export default Vue.extend ({
 
 		@include ipad(portrait) {
 			min-height: 65rem;
-			max-width: 500px;
+			max-width: 400px;
 		}
 
 		@include max-screen($small) {
 			height: auto;
-			max-width: 500px;
+			max-width: 400px;
 		}
+
 		@include max-screen($xsmall) {
 			height: auto;
-			max-width: 400px;
+			max-width: 300px;
 		}
 
 		label {
@@ -300,10 +301,9 @@ export default Vue.extend ({
 				transition: all .4s ease-in-out;
 				/* transition-property: opacity, transform, max-height, min-height, width; */
 
-				&.-hovered,
-				&:focus-within:not(.-selected) {
+				&.-hovered {
 					box-shadow: 0 3rem 2rem 0 rgba(0,0,0,0.1);
-					transform: scale(1.4);
+					transform: scale(1.3);
 
 					height: 33rem;
 					width: 22rem;
@@ -316,7 +316,12 @@ export default Vue.extend ({
 						transform: scale(1.3);
 					}
 					@include max-screen($medium) {
+						margin-top: 1.5rem;
 						transform: scale(1.1);
+						margin-left: 1rem;
+						margin-right: 1rem;
+						height: 30rem;
+						padding-top: 2.5rem;
 					}
 
 					opacity: 1;
@@ -337,10 +342,10 @@ export default Vue.extend ({
 							font-weight: 400;
 						}
 					}
-
 				}
+
 				&.-selected {
-					opacity: 1;
+					opacity: 1 !important;
 					border: .1rem solid $color-main;
 
 					&:after {
@@ -355,13 +360,12 @@ export default Vue.extend ({
 				}
 
 				.inside-container {
-
 					display: flex;
 					flex-direction: column;
 					max-width: 15rem;
 
 					.card-title {
-
+						display: block;
 						font-size: 1.6rem;
 						font-weight: 600;
 						text-transform: uppercase;
@@ -413,12 +417,13 @@ export default Vue.extend ({
 
 					transition: all .3s .2s ease-in-out;
 					transition-property: transform, opacity;
+					position: relative;
 
 					.single-slide {
 						display: flex;
 						position: absolute;
 						left: 0;
-						width: auto;
+						width: 100%;
 
 						box-shadow: 0 .5rem 1.5rem 0 rgba(126,151,171,0.2);
 						border-radius: .5rem;
@@ -438,12 +443,18 @@ export default Vue.extend ({
 							flex-direction: column;
 							align-items: flex-start;
 							text-align: left;
+							width: 100%;
+
 							.title {
 								font-size: 1rem;
+								display: block;
 								font-weight: 600;
-								margin-bottom: .4rem;
+								margin-bottom: .5rem;
 							}
+
 							.description {
+								display: block;
+								max-width: 12rem;
 								font-size: .8rem;
 								font-weight: 300;
 								margin-bottom: .6rem;
@@ -459,6 +470,7 @@ export default Vue.extend ({
 							left: 0;
 							top: 50%;
 							width: 100%;
+
 							.prev {
 								img {
 									position: absolute;
